@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>Shapefile_Iwi_AreasOfInterest (FeatureServer)</title>
+  <link href='/ESRI.ArcGIS.SDS.REST.css' rel='stylesheet' type='text/css'>
+  <link rel='SHORTCUT ICON' href='/favicon.ico'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+  <meta name="keywords" content="ArcGIS REST Services Directory Root">
+</head>
+<body>
+<table width="100%" class="userTable">
+<tr>
+<td class="titlecell">ArcGIS REST Services Directory</td>
+</tr>
+</table>
+<table class="navTable" width="100%">
+<tbody>
+<tr valign="top">
+<td class="breadcrumbs">
+<a href="/97skzKG31fDSvRnN/ArcGIS/rest/services">Home</a> > <a href="/97skzKG31fDSvRnN/ArcGIS/rest/services">services</a> > <a href="/97skzKG31fDSvRnN/ArcGIS/rest/services/Shapefile_Iwi_AreasOfInterest/FeatureServer">Shapefile_Iwi_AreasOfInterest (FeatureServer)</a> </td>
+<td align="right">
+<a href="http://resources.arcgis.com/en/help/arcgis-rest-api/" target="_blank">API Reference</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tr>
+<td class="apiref">
+<a href="?f=pjson" target="_blank">JSON</a>
+</td>
+</tr>
+</table>
+<div class='restHeader'>
+<h2>Shapefile_Iwi_AreasOfInterest (FeatureServer)</h2>
+</div>
+<div class='restBody'>
+<b>View In: </b>
+&nbsp;&nbsp;<a href="http://www.arcgis.com/home/webmap/viewer.html?url=https://services2.arcgis.com/97skzKG31fDSvRnN/ArcGIS/rest/services/Shapefile_Iwi_AreasOfInterest/FeatureServer&source=sd" target="_blank">ArcGIS.com Map</a>
+<br/><br/>
+<b>Service Description:</b> <br/>
+<br/>
+<b>Service ItemId:</b> 1016f88251c5402291c1aa5020aab02d<br/>
+<br/>
+<b>Has Versioned Data:</b> false<br/>
+<br/>
+<b>Max Record Count:</b> 2000<br/>
+<br/>
+<b>Supported query Formats:</b> JSON<br/>
+<br/>
+<b>Supports applyEdits with GlobalIds:</b> False<br/>
+<br/>
+<a href="/97skzKG31fDSvRnN/arcgis/rest/services/Shapefile_Iwi_AreasOfInterest/FeatureServer/layers">All Layers and Tables</a><br/>
+<br/>
+<b>Layers:</b> <br/>
+<ul>
+<li><a href="/97skzKG31fDSvRnN/ArcGIS/rest/services/Shapefile_Iwi_AreasOfInterest/FeatureServer/0">Shapefile_Iwi_AreasOfInterest</a> (0)</li>
+</ul><br/>
+<b>Description:</b> <br/>
+<br/>
+<b>Copyright Text:</b> <br/>
+<br/>
+<b>Spatial Reference:</b> 102100<br/>
+<br/>
+<b>Initial Extent:</b> <br/>
+<ul>
+XMin: -20037507.0671618<br/>
+YMin: -6011169.95112393<br/>
+XMax: 20037507.0671618<br/>
+YMax: -3404959.27292203<br/>
+Spatial Reference: 102100<br/>
+</ul>
+<b>Full Extent:</b> <br/>
+<ul>
+XMin: -20037507.0671618<br/>
+YMin: -6608713.51013498<br/>
+XMax: 20037507.0671618<br/>
+YMax: -3404959.27292203<br/>
+Spatial Reference: 102100<br/>
+</ul>
+<b>Units:</b> esriMeters<br/>
+<br/>
+<b>Child Resources: </b>
+&nbsp;&nbsp;<a href="/97skzKG31fDSvRnN/arcgis/rest/services/Shapefile_Iwi_AreasOfInterest/FeatureServer/info">Info</a>
+<br/><br/>
+<b>Supported Operations: </b>
+&nbsp;&nbsp;<a href="/97skzKG31fDSvRnN/arcgis/rest/services/Shapefile_Iwi_AreasOfInterest/FeatureServer/query">Query</a>
+<br/><br/>
+</div>
+</body>
+</html>

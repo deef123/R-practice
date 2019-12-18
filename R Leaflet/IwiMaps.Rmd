@@ -1,0 +1,58 @@
+---
+title: "Taranaki iwi rohe"
+output: html_notebook
+---
+
+```{r echo=False}
+install.packages(c('leaflet','geojsonio'))
+library(leaflet)
+library(geojsonio)
+```
+
+
+This map is based on the Taranaki regional council (TRC) iwi rohe maps. Source: https://hub.arcgis.com/datasets/TRCNZ::iwi-rohe-outline/geoservice, access date: 19/12/2019
+```{r echo=False}
+library(geojsonio)
+library(dplyr)
+
+# URL to TRC iwi rohe map
+full_url<-"https://maps.trc.govt.nz/arcgis/rest/services/LocalMaps/Iwi/MapServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=json"
+file_path<-"iwi.json"
+download.file(full_url, file_path)
+nziwimaps<- geojsonio::geojson_read(x=file_path, what="sp")
+
+
+
+# Mapping
+library(leaflet)
+my_base_map<-leaflet() %>% setView(lat=-39.055626, lng=174.075226, zoom=9)
+my_base_map %>% addProviderTiles(providers$Stamen.TonerLite)
+my_base_map %>% addPolygons(data=nziwimaps,
+                            weight=1, 
+                            opacity=1, 
+                            color="black", 
+                            fillColor = "yellow",
+                            highlightOptions=highlightOptions(color="white", weight=2, bringToFront=TRUE)
+                            )
+my_base_map
+
+```
+
+# TPK maps #
+This map, on the other hand, is produced using the Te Puni Kokiri(TPK) maps. TRC maps, are considered to be more out of date, on the other hand, TPK maps "were created by tracing over the borderlines in georeferenced images created from maps provided by iwi or from Treaty Settlement documents found on https://www.govt.nz/organisations/office-of-treaty-settlements/."
+
+```{r echo=FALSE}
+tpk_url<-"https://services2.arcgis.com/97skzKG31fDSvRnN/arcgis/rest/services/Shapefile_Iwi_AreasOfInterest/FeatureServer"
+file_path<-"tpk_iwi.shp"
+tpk_iwimaps<- readOGR(tpk_url)
+
+
+```
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
